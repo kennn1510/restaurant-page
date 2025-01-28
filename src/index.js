@@ -1,5 +1,5 @@
 import "./style.css";
-import "./initial-page-load.js";
+import { initialPageLoad } from "./initial-page-load.js";
 import "./load-menu.js";
 
 // addEventListeners to each button
@@ -12,6 +12,19 @@ import "./load-menu.js";
   const aboutButton = document.querySelector("#about");
 
   homeButton.addEventListener("click", () => {
-    document.body.textContent = "";
+    wipeContent();
+    initialPageLoad();
   });
+
+  menuButton.addEventListener("click", () => {
+    wipeContent();
+  });
+
+  aboutButton.addEventListener("click", () => {
+    wipeContent();
+  });
+
+  function wipeContent() {
+    document.querySelector("div#content").textContent = "";
+  }
 })();

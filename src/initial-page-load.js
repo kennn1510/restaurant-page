@@ -1,6 +1,6 @@
 import cake from "./cake.ico";
 
-(() => {
+const initialPageLoad = function () {
   const content = document.querySelector("#content");
   const heading = document.createElement("h1");
   const cakeImage = document.createElement("img");
@@ -26,4 +26,8 @@ import cake from "./cake.ico";
   content.appendChild(locationParagraph);
   content.appendChild(heading);
   content.appendChild(cakeImage);
-})();
+};
+
+initialPageLoad();
+
+export { initialPageLoad };
