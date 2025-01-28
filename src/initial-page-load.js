@@ -1,6 +1,6 @@
 import cake from "./cake.ico";
 
-(function initialPageLoad() {
+(() => {
   const content = document.querySelector("#content");
   const heading = document.createElement("h1");
   const cakeImage = document.createElement("img");
@@ -9,7 +9,7 @@ import cake from "./cake.ico";
   const location = document.createElement("h2");
   const locationParagraph = document.createElement("p");
 
-  heading.textContent = "MyMy's Cake Shop";
+  heading.innerHTML = "MyMy's <span>Cake</span> Shop";
   cakeImage.src = cake;
   welcome.textContent = "Welcome to our wonderful cake shop!";
   welcomeParagraph.textContent =
@@ -17,6 +17,8 @@ import cake from "./cake.ico";
   location.textContent = "Location";
   locationParagraph.textContent =
     "12345 Cool Cakes Boulevard, Cakeland, Missouri";
+
+  heading.classList.add("rainbow");
 
   content.appendChild(welcome);
   content.appendChild(welcomeParagraph);
