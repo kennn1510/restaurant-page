@@ -1,1 +1,3 @@
-console.log("Hello, restaturant!");
+import "./style.css";
+
+console.log("Hello, restaurant!");

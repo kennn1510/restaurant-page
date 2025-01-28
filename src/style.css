@@ -1,0 +1,11 @@
+body {
+  background-image: url("./heart-chocolate-cake.jpg");
+  background-size: cover;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
