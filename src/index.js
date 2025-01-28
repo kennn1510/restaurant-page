@@ -1,6 +1,6 @@
 import "./style.css";
-import { initialPageLoad } from "./initial-page-load.js";
-import "./load-menu.js";
+import { initialPageLoad } from "./initial-page-load.js"; //single named
+import loadMenuPage from "./load-menu.js"; // default
 
 // addEventListeners to each button
 // inside, it will erase all of the div#content and then run all the correct
@@ -18,6 +18,7 @@ import "./load-menu.js";
 
   menuButton.addEventListener("click", () => {
     wipeContent();
+    loadMenuPage();
   });
 
   aboutButton.addEventListener("click", () => {

@@ -1,4 +1,5 @@
 import cake from "./cake.ico";
+import heartCake from "./heart-chocolate-cake.jpg";
 
 const initialPageLoad = function () {
   const content = document.querySelector("#content");
@@ -19,6 +20,8 @@ const initialPageLoad = function () {
     "12345 Cool Cakes Boulevard, Cakeland, Missouri";
 
   heading.classList.add("rainbow");
+
+  document.body.style.backgroundImage = `url(${heartCake})`;
 
   content.appendChild(welcome);
   content.appendChild(welcomeParagraph);
