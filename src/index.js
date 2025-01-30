@@ -1,10 +1,7 @@
 import "./style.css";
 import { initialPageLoad } from "./initial-page-load.js"; //single named
 import loadMenuPage from "./load-menu.js"; // default
-
-// addEventListeners to each button
-// inside, it will erase all of the div#content and then run all the correct
-// tab modules to populate the new content
+import loadAboutPage from "./about.js";
 
 (function addButtons() {
   const homeButton = document.querySelector("#home");
@@ -23,6 +20,7 @@ import loadMenuPage from "./load-menu.js"; // default
 
   aboutButton.addEventListener("click", () => {
     wipeContent();
+    loadAboutPage();
   });
 
   function wipeContent() {
