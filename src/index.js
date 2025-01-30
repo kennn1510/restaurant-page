@@ -27,5 +27,6 @@ import loadMenuPage from "./load-menu.js"; // default
 
   function wipeContent() {
     document.querySelector("div#content").textContent = "";
+    document.body.style.backgroundColor = "white";
   }
 })();
